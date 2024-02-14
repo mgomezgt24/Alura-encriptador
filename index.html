@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+
+
+
+        <main>
+
+            <div class="box01">
+                <div class="box02">
+
+                    <img src="imagenes/Logo.png" width="50px">
+
+                    <textarea cols="70" rows="10" id="TextoEncriptar" class="input-padron" style="border: none;" style="outline: none;" required placeholder="ingrese el texto aqui"></textarea>
+
+                    <p class="copyright">&#10071; Solo letras minúsculas y sin acentos</p>
+                
+                    <div>
+                        <input  type="submit" onclick="encriptar();" value="Encriptar!" class="encriptar">
+                
+                        <input type="submit" onclick="desencriptar();" value="Desencriptar!" class="desencriptar">
+
+                        <input type="submit" onclick="limpiar();" value="Limpiar" class="limpiar">
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="box03">
+                    <ul class="productos">
+                        <li>
+                            <textarea cols="70" rows="10" id="CopiarPegar" class="copiar-pegar" required style="height: 120px;" placeholder="Elaborado por Mynor Gómez"></textarea>
+                            
+                            <img src="imagenes/Muñeco.png" width="200px" id="muneco">
+                            <P class="producto-precio" id="ningun">Ningún mensaje fue encontrado</P>
+                            <P class="producto-descripcion" id="ingresa">Ingresa el texto que deseas encriptar o desencriptar</P>
+                            
+
+                            <input type="submit" onclick="copiarPegar();" value="Copiar" class="copiar"> 
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+             
+        </main>
+
+
+        <script src="app.js"></script>
+
+    </body>
+
+</html>

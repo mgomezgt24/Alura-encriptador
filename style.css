@@ -1,0 +1,288 @@
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0;            /* 20 top,down : 0 left,right | espaciamientos superior e inferior del header */
+}
+
+.caja {
+    width: 940px;               /* 940 de 1280 de resolución */
+    position: relative;
+    margin: 0 auto;             /* 0 top,down : auto left,right | alinear al centro horizontalmente */
+}
+
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+nav li{
+    display: inline;    /* pone horizontal la navegación Home Productos Contacto */
+    margin: 0 0 0 15px;             /* margen de los textos de navegación */
+}                                   /* margin: top right bottom left */
+
+nav a{
+    text-transform: uppercase;         /* cambia a mayusculas */
+    color: black;                   /* color de texto a negro */
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{                            /* cuando el mouse se posiciona sobre - CAPTURA DEL MOUSE - CAPTURA DEL MOUSE*/
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+
+
+
+.productos {
+    width: 940px;
+    margin: 0 auto;                     /* centrar horizontalmente */
+    padding: 50px;                      /* espacio entre header y main */
+}
+
+.productos li {
+    display: inline-block;
+    text-align: center;                 /* alinear <h2> <p> */ 
+    width: 30%;                         /* cada uno de los elementos va a ocupar un 30% */
+    height: 600px;
+    vertical-align: middle;
+    /* background: #CCCCCC; solo se uso como guia */
+    margin: 0 1.5%;                     /* aumenta la separación entre los tres elementos */
+    padding: 30px 20px;                 /* vertical horizontal, para aumentar tamaño del elemento */
+    box-sizing: border-box;             /* hace que los 20px de paddin laterales este dentro del 30% de width */
+
+    border: 2px solid #000000;          /* CONFIGURACIONES PARA EL BORDE NEGRO SOLIDO - SIMPLIFICADO */ 
+
+    border-radius: 10px;                        /* bordes iguales para cada esquina */
+
+}
+
+.productos li:hover{                    /* cuando el mouse se posiciona sobre - CAPTURA DEL MOUSE - CAPTURA DEL MOUSE */
+    border-color: #c78c19;
+}
+
+.productos li:active{                   /* cuando se hace clic con el mouse - CAPTURA DEL MOUSE - CAPTURA DEL MOUSE */
+    border-color: #088c19;
+}
+
+.productos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos li:hover h2{
+    font-size: 33px;                    /* cuando el mouse se posiciona sobre h2 cambia el tamaño de texto - CAPTURA DEL MOUSE - */
+}
+
+.producto-descripcion {
+    font-size: 18px;
+}
+
+.producto-precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;                   /* separar el precio con la descripción */
+}
+
+/* PARA FOOTER 
+
+footer {
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+*/
+
+
+
+
+
+
+/* ESTILOS PARA PAGINA DE CONTACTO */
+
+main {
+    width: 940px;
+    margin: 0 auto;     /* 0=arriba y abajo, auto=lados */
+
+}
+
+form {
+    margin: 40px 0;     /* 40px arriba-abajo, 0 lados : espacios entre header-form y footer-form */
+}
+
+form label, form legend {
+    display: block;     /* para cambiar el "inline-block" que tiene por defecto */
+    font-size: 20px;
+    margin: 0 0 10px;   /* 10px abajo */
+}
+
+
+
+.checkbox {
+    margin: 20px 0;     /* 20px arriba-abajo : 0 laterales */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CAJAS PARA SEPARAR CONTENIDO DE ENCRIPTADOR */
+
+.box01 {
+    width: 940px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    /*align-items: flex-end;*/
+}
+
+.box02 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    
+
+}
+
+.box03 {
+    width: 30%;
+
+}
+
+
+
+/* TEXTAREA */
+
+.input-padron {
+    display: block;     /* para cambiar el "inline-block" que tiene por defecto */
+    margin: 0 0 20px;   /* 20px abajo */
+    padding: 10px 25px;     /* 10px sup-inf : 25px arriba-abajo */
+    width: 50%;             /* ocupa el 50% del ancho 940px */
+}
+
+
+
+.copiar-pegar {
+    display: block;     /* para cambiar el "inline-block" que tiene por defecto */
+    margin: 0 0 20px;   /* 20px abajo */
+    padding: 10px 25px;     /* 10px sup-inf : 25px arriba-abajo */
+    width: 80%;             /* ocupa el 50% del ancho 940px */
+}
+
+
+.copyright {
+    color: #000000;
+    font-size: 13px;
+    margin: 20px;
+}
+
+
+
+/* BOTONES DE ENCRIPTADOR */
+
+.copiar {
+    width: 60%;
+    padding: 15px 0;        /* 15px arriba-abajo : 0 laterales */
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;         /* afecta a background y transform en ".enviar:hover" */
+    cursor: pointer;
+
+}
+
+.encriptar {
+    display: inline-block;
+    width: 30%;
+    padding: 15px 0;        /* 15px arriba-abajo : 0 laterales */
+    margin-right: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;         /* afecta a background y transform en ".enviar:hover" */
+    cursor: pointer;
+}
+
+.desencriptar {
+    display: inline-block;
+    width: 30%;
+    padding: 15px 0;        /* 15px arriba-abajo : 0 laterales */
+    margin-left: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;         /* afecta a background y transform en ".enviar:hover" */
+    cursor: pointer;
+}
+
+
+.limpiar {
+    display: inline-block;
+    width: 30%;
+    padding: 15px 0;        /* 15px arriba-abajo : 0 laterales */
+    margin-left: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;         /* afecta a background y transform en ".enviar:hover" */
+    cursor: pointer;
+}
+
+
+
+
+
+
+.encriptar:hover {
+    background: darkorange;
+    transform: scale(1.2) /*rotate(5deg)*/;
+    
+}
+
+.desencriptar:hover {
+    background: darkorange;
+    transform: scale(1.2) /*rotate(5deg)*/;
+    
+}
+
+.copiar:hover {
+    background: darkorange;
+    transform: scale(1.2) /*rotate(5deg)*/;
+    
+}
+
+
+.copiar-pegar {
+    border: none;
+    outline: none;
+}
